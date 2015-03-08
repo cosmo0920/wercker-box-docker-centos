@@ -1,8 +1,0 @@
-box: cosmo0920/centos6-docker
-build:
-  steps:
-    - script:
-        name: Build a CentOS 6.6 Docker image box
-        code: |
-          docker -v
-          docker built -t centos66/build-test
