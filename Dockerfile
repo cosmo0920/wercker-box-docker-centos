@@ -1,4 +1,4 @@
-from centos:6.6
+from centos:6.5
 
 maintainer cosmo0920.wp@gmail.com
 
