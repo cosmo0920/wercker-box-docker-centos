@@ -10,3 +10,4 @@ RUN yum install -y librabbitmq wget
 RUN wget -P /etc/yum.repos.d/ http://project-hatohol.github.io/repo/hatohol.repo
 RUN yum install -y json-glib qpid-cpp-server
 RUN yum groupinstall -y 'Development tools'
+RUN git clone https://github.com/project-hatohol/hatohol.git ~/hatohol
