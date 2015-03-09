@@ -14,3 +14,4 @@ RUN yum install -y Django
 RUN git clone https://github.com/project-hatohol/hatohol.git ~/hatohol
 RUN cd ~/hatohol && libtoolize && autoreconf -i
 RUN cd ~/hatohol && ./configure
+RUN cd ~/hatohol && make -j `cat /proc/cpuinfo | grep processor | wc -l`
