@@ -5,4 +5,4 @@ build:
         name: Build a CentOS 6.6 Docker image box
         code: |
           docker -v
-          docker build -t centos66/build-test .
+          docker build -t centos66/build-test wercker/
