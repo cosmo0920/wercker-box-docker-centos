@@ -10,6 +10,7 @@ RUN yum install -y librabbitmq-devel wget
 RUN wget -P /etc/yum.repos.d/ http://project-hatohol.github.io/repo/hatohol.repo
 RUN yum install -y json-glib-devel qpid-cpp-server-devel
 RUN yum groupinstall -y 'Development tools'
+RUN yum install -y Django
 RUN git clone https://github.com/project-hatohol/hatohol.git ~/hatohol
 RUN cd ~/hatohol && libtoolize && autoreconf -i
 RUN cd ~/hatohol && ./configure
